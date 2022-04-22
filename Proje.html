@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Tablolar</title>
+    <style type="text/css">
+      body {
+          background-color: azure
+      }
+  </style>
+</head>
+
+<body>
+    <div class="container container-sm container mt-5">
+        <h1 class="text-center fw-bold" >BOOTSTRAP TABLOLAR</h1>
+
+        <br><br>
+
+        <div class="row container rounded-3 container mb-2">
+            <div class="col">
+                <h2 class="text-center fw-bold "> Bu projemde bootstrap tablolar konusunu kısa bir şekilde anlatacağım. </h2>
+            </div>
+        </div>
+          <br><br>
+
+        <div class="container  rounded-3 container mb-2 ">
+            <div class="row">
+                <div class="col text-center">
+                    <img src="1.png" alt="giris" class="img-fluid mt-3">
+                    <p class="fw-bold fs-4 text-center">Öncelikle <a href="https://getbootstrap.com" target="_blank">getbootstrap.com</a> sitesine girerek get started diyoruz</p>
+                </div>
+                <div class="col text-center ">
+                    <img src="2.png" alt="giris" class="img-fluid mt-3">
+                    <p class="fw-bold fs-4 text-center">daha sonra göreceğiniz sayfada css başlığı altındaki linki kopyalıyor ve head kısmına ekliyoruz.</p>
+
+                </div>
+            </div>
+        </div>
+          <br><br><br>
+        <div class="container rounded-3 container mb-2 ">
+            <div>
+                <h2 class="fw-bold"> Temel bir bootstrap tablosunda örenktede görüleceği gibi hafif bir dolgu ve yalnızca yatay bölücüler bulunur.</h2>
+            </div>
+                <div class="container">            
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Firstname</th>
+                          <th>Lastname</th>
+                          <th>Email</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>John</td>
+                          <td>Doe</td>
+                          <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>Mary</td>
+                          <td>Moe</td>
+                          <td>mary@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>July</td>
+                          <td>Dooley</td>
+                          <td>july@example.com</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+        </div>
+        <br><br><br>
+            <div>
+                <h2 class="fw-bold ">Temel düzeydeki tablomuzu daha rahat okunabilir hale getirmek için .table-striped kullanıyoruz bu etiket ise tablonun satırlarının farklı renklerde olmasını sağlıyor.</h2>
+                <div class="container">           
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>Firstname</th>
+                          <th>Lastname</th>
+                          <th>Email</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>John</td>
+                          <td>Doe</td>
+                          <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>Mary</td>
+                          <td>Moe</td>
+                          <td>mary@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>July</td>
+                          <td>Dooley</td>
+                          <td>july@example.com</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+              <br><br><br>
+                <h2 class="fw-bold">Eğer tablolara çerçeve eklemek istersek .table-bordered etiketiyle tabloları örnektede görüleceği üzere çerçeveli bir hale getiririz.</h2>
+                <div class="container">         
+                    <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                        </tr>
+                        <tr>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                </div>
+                <br><br><br>
+                <div>
+                  <h2 class="fw-bold">Tablomuzu eğer herhangi bir şıkkı seçmemizi gerektirecek şekilde kullanıcaksak kullanıcıya kolaylık sağlaması için .table-hover etiketi kullanırız bu etiket menüde herhangi bir satırın üstüne faremizi getirince onun vurgulanmasını sağlar.</h2>
+                  <div class="container">           
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Firstname</th>
+                          <th>Lastname</th>
+                          <th>Email</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>John</td>
+                          <td>Doe</td>
+                          <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>Mary</td>
+                          <td>Moe</td>
+                          <td>mary@example.com</td>
+                        </tr>
+                        <tr>
+                          <td>July</td>
+                          <td>Dooley</td>
+                          <td>july@example.com</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+
+        
+</body>
